@@ -11,9 +11,20 @@
     "deploy": "vite build && gh-pages -d dist",
     "predeploy": "rm -rf dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngDonovan/code-security.git"
+  },
+  "author": "Ing Donovan <rojasdrm03@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IngDonovan/code-security/issues"
+  },
+  "homepage": "https://github.com/IngDonovan/code-security",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
