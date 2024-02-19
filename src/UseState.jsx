@@ -30,7 +30,7 @@ function UseState({name}) {
         <div>
             <h2>Eliminar {name}</h2>
             <p>Por favor, escribe el código de seguridad.</p>
-            {error && (
+            {(error && !loading) && (
                 <p>Error: el código es incorrecto</p>
             )}
             {loading && (
@@ -44,10 +44,10 @@ function UseState({name}) {
                 }} 
             />
             <button
-                onClick={() => (
-                    setError(false),
+                onClick={() => {
+                    // setError(false)
                     setLoading(!loading)
-                    )}
+                }}
             >Comprobar</button>
         </div>
     );
