@@ -33,7 +33,7 @@ class ClassState extends React.Component {
 
     return(
         <div>
-            <h2>Eliminar {this.props.name}</h2>
+            <h2>Eliminar con {this.props.name}</h2>
             <p>Por favor, escribe el código de seguridad.</p>
             {(this.state.error && !this.state.loading) && (
                 <p>Error: el código es incorrecto</p>

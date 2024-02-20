@@ -79,7 +79,7 @@ function UseState({name}) {
     if (!state.deleted && !state.confirmed) {
         return(
             <div>
-                <h2>Eliminar {name}</h2>
+                <h2>Eliminar con {name}</h2>
                 <p>Por favor, escribe el código de seguridad.</p>
                 {(state.error && !state.loading) && (
                     <p>Error: el código es incorrecto</p>
